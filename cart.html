@@ -107,7 +107,7 @@ Add a discount code (optional)
 <div class="collapse" id="collapseExample">
 <div class="mt-3">
 <input type="text" name="" id="discount_code1" class="form-control font-weight-bold" placeholder="Enter the discount code">
-<small id="error_trw" class="text-dark mt-3">code is Created By Shubham</small>
+<small id="error_trw" class="text-dark mt-3">code is Created By Kushal</small>
 </div>
 <button class="btn btn-primary btn-sm mt-3" onclick="discount_code()">Apply</button>
 </div>
@@ -168,12 +168,12 @@ total_cart_amt.innerHTML  = parseInt(product_total_amt.innerHTML) + parseInt(shi
 const  discount_code = () => {
 let totalamtcurr = parseInt(total_cart_amt.innerHTML);
 let error_trw = document.getElementById('error_trw');
-if(discountCode.value === 'Created By Shubham'){
+if(discountCode.value === 'Created By Kushal'){
 let newtotalamt = totalamtcurr - 100;
 total_cart_amt.innerHTML = newtotalamt;
 error_trw.innerHTML = "Hurray! code is valid You win 100 &#8377; discount";
 }else{
-error_trw.innerHTML = "Try Again! Valid code is Created By Shubham";
+error_trw.innerHTML = "Try Again! Valid code is Created By Kushal";
 }
 }
 </script>
